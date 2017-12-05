@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TODO-Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Kalam|Satisfy" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <style>.main{background-image: url(assets/img/todo.jpg);}</style>
+    <div class="maincontent">
+
+<h1>TODO-Dashboard</h1>
+        <div class="tasks">
+<h2>You tasks:</h2>
+{% for task in task %}
+        <strong>{{ task.name }}</strong>
+        <br>
+        <p class="created">at {{ task.created.strftime('%d %B %Y') }}:</p>
+        <br>
+        <em>{{ task.message }}</em>
+        <br>
+        <em class="status">{{ task.check }}</em>
+        <br>
+            (<a href="/task/{{task.key.id()}}/edit">edit</a>,
+            <a href="/task/{{task.key.id()}}/delete">delete</a>)
+            <br>
+        ------------------------------------
+
+    <br>
+{% else %}
+    <p>No tasks yet.</p>
+{% endfor %}
+            </div>
+<br>
+        <a class="btn" href="/">Add a new Task!</a>
+    </div>
+    <div class="links">
+        <h3>Check out my other programs!</h3>
+     <a href="https://calculatorwebapp.appspot.com"><img class="link_img" src="assets/img/Taschenrechner_app.png"/></a>
+        <a href="https://capitalcitywebapp.appspot.com"><img class="link_img2" src="assets/img/Capital City Game_app.png"/></a>
+        <a href="https://unitconverterwebapp.appspot.com"><img class="link_img2" src="assets/img/Unit Converter_app.png"/></a>
+
+</div>
+</div>
+</body>
+</html>

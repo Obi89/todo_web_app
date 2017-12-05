@@ -1,0 +1,99 @@
+body {
+    text-align: center;
+}
+.main{
+  width: 100%;
+  border: white solid 0.2px;
+  margin-top: 0px;
+  height: auto;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: auto;
+}
+.maincontent{
+  margin: 50px 200px 300px 200px;
+  padding: 20px 0px 30px 0px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Architects Daughter', cursive;
+  background-color: rgba(120, 120, 120, 0.7);
+  border-top: solid white 0.5px;
+  border-bottom: solid white 0.5px;
+}
+h1{
+    font-size: 50px;
+    color: rgb(229, 37, 16)
+}
+h2{
+    text-decoration: underline;
+    font-size: 30px;
+}
+form{
+    font-size: 28px;
+}
+.btn{
+    color: black;
+    border: black solid 0.5px;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 30px;
+}
+.btn:hover{
+    color: rgb(229, 37, 16);
+    font-size: 20px;
+    border: rgb(229, 37, 16) solid 0.5px;
+}
+.btn2{
+    background-color: rgb(235, 254, 136);
+    color: rgb(0, 0, 0);
+    border: black solid 0.5px;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.btn2:hover{
+    color: rgb(229, 37, 16);
+    font-size: 20px;
+    border: rgb(229, 37, 16) solid 0.5px;
+}
+.links{
+  margin: -150px 200px 50px 200px;
+  padding: 10px 0px 30px 0px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(120, 120, 120, 0.7);
+  border-top: solid white 0.5px;
+  border-bottom: solid white 0.5px;
+}
+.link_img{
+    width: 280px;
+}
+.link_img:hover{
+    width: 300px;
+    border: black solid 1px;
+}
+.link_img2{
+    width: 240px;
+    margin-left: 30px;
+}
+.link_img2:hover{
+    width: 260px;
+    border: black solid 1px;
+}
+.status{
+    color: red;
+}
+.created{
+    font-size: 11px;
+}
+.tasks{
+    background-color: rgb(235, 254, 136);
+    margin: 20px 290px 20px 272px;
+    padding: 10px 0px 30px 0px;
+    color:black;
+}

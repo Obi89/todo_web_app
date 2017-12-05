@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Welcome TODO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Kalam|Satisfy" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <style>.main{background-image: url(assets/img/todo.jpg);}</style>
+    <div class="maincontent">
+    <h1></h1>
+<h1>Welcome<br> to the<br> TODO-Task-Manager!</h1>
+   <div class="tasks">
+        <form method="post" action="/todolist">
+            <p>Enter your Task:</p>
+    <p><strong>task name: </strong><input type="text" name="name"></p>
+    <p>done/undone:
+        <select name="check">
+          <option value="done">done</option>
+          <option value="undone">undone</option>
+        </select></p>
+<p>description:</p>
+<p><textarea name="message" rows="10" cols="30" placeholder="Enter a task description optional here!"></textarea></p>
+
+
+     <button class="btn2" type="submit">Add Task!</button>
+</form>
+    </div>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TODO-List Edit</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Kalam|Satisfy" rel="stylesheet">
+</head>
+<body>
+<h3>Todo-List: Edit task</h3>
+<form method="post">
+    <p><strong>Edit the Todo-Task</strong></p>
+
+    <p><strong>task name: </strong><input type="text" name="name" value="{{ task.name }}"></p>
+
+    <p><strong>Status:</strong>
+        <select name="check">
+            <option value="{{ task.check }}">{{ task.check }}</option>
+            {% if task.check == "undone" %}
+          <option value="done">done</option>
+            {% else %}
+          <option value="undone">undone</option>
+            {% endif %}
+        </select></p>
+
+    <p>Task description:<textarea name="message" rows="10" cols="30">{{ task.message }}</textarea></p>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>

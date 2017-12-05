@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TODO-List Delete</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Kalam|Satisfy" rel="stylesheet">
+</head>
+<body>
+<h3>Todo-List: Delete task</h3>
+
+<form method="post">
+    <p><strong>Delete the Todo-Task</strong></p>
+
+    <p><strong>Task:</strong> {{ task.name }}</p>
+
+    <p><strong>Task description: </strong>{{ task.message }}</p>
+
+    <p><strong>Status:</strong> {{ task.check }}</p>
+
+    <button type="submit">Delete this task</button>
+</form>
+</body>
+</html>
